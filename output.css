@@ -602,8 +602,20 @@ video {
   position: relative;
 }
 
+.-top-10{
+  top: -2.5rem;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
 .left-0{
   left: 0px;
+}
+
+.left-5{
+  left: 1.25rem;
 }
 
 .left-\[-100\%\]{
@@ -614,52 +626,48 @@ video {
   left: 0;
 }
 
-.top-0{
-  top: 0px;
-}
-
-.top-10{
-  top: 2.5rem;
-}
-
 .right-0{
   right: 0px;
 }
 
-.right-2{
-  right: 0.5rem;
+.top-0{
+  top: 0px;
 }
 
-.right-1{
-  right: 0.25rem;
+.-top-8{
+  top: -2rem;
 }
 
-.left-1{
-  left: 0.25rem;
+.left-1\/2{
+  left: 50%;
 }
 
-.left-2{
-  left: 0.5rem;
+.top-1\/2{
+  top: 50%;
 }
 
-.bottom-0{
-  bottom: 0px;
+.right-4{
+  right: 1rem;
 }
 
-.left-5{
-  left: 1.25rem;
+.top-3{
+  top: 0.75rem;
 }
 
-.left-4{
-  left: 1rem;
+.-top-4{
+  top: -1rem;
 }
 
-.left-3{
-  left: 0.75rem;
+.bottom-4{
+  bottom: 1rem;
 }
 
 .z-50{
   z-index: 50;
+}
+
+.-z-10{
+  z-index: -10;
 }
 
 .flex{
@@ -674,12 +682,66 @@ video {
   height: 4rem;
 }
 
+.h-64{
+  height: 16rem;
+}
+
 .min-h-\[80vh\]{
   min-height: 80vh;
 }
 
 .w-full{
   width: 100%;
+}
+
+.w-64{
+  width: 16rem;
+}
+
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes move{
+  50%{
+    transform: translateY(-1rem);
+  }
+}
+
+.animate-movingY{
+  animation: move 3s linear infinite;
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.animate-rotating{
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes scaleUp{
+  0%{
+    transform: scale(0.8);
+  }
+
+  50%{
+    transform: scale(1.2);
+  }
+
+  100%{
+    transform: scale(0.8);
+  }
+}
+
+.animate-scalingUp{
+  animation: scaleUp 3s linear infinite;
 }
 
 .cursor-pointer{
@@ -724,6 +786,10 @@ video {
   overflow: hidden;
 }
 
+.rounded-full{
+  border-radius: 9999px;
+}
+
 .bg-\[\#25262A\]{
   --tw-bg-opacity: 1;
   background-color: rgb(37 38 42 / var(--tw-bg-opacity));
@@ -731,6 +797,11 @@ video {
 
 .bg-\[\#25262A\]\/80{
   background-color: rgb(37 38 42 / 0.8);
+}
+
+.bg-\[\#3f4145\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(63 65 69 / var(--tw-bg-opacity));
 }
 
 .font-Jost{
@@ -741,19 +812,9 @@ video {
   font-family: Lobster, sans-serif;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-6xl{
@@ -761,9 +822,19 @@ video {
   line-height: 1;
 }
 
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-\[\#64F3AA\]{
@@ -771,22 +842,22 @@ video {
   color: rgb(100 243 170 / var(--tw-text-opacity));
 }
 
-.text-slate-300{
-  --tw-text-opacity: 1;
-  color: rgb(203 213 225 / var(--tw-text-opacity));
-}
-
 .text-slate-200{
   --tw-text-opacity: 1;
   color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
-.opacity-25{
-  opacity: 0.25;
-}
-
 .opacity-30{
   opacity: 0.3;
+}
+
+.opacity-40{
+  opacity: 0.4;
+}
+
+.blur-3xl{
+  --tw-blur: blur(64px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .backdrop-blur-sm{
@@ -797,10 +868,6 @@ video {
 
 .duration-300{
   transition-duration: 300ms;
-}
-
-.duration-500{
-  transition-duration: 500ms;
 }
 
 body{
@@ -923,9 +990,19 @@ h1{
   }
 }
 
+@media (min-width: 540px){
+  .md\:gap-4{
+    gap: 1rem;
+  }
+}
+
 @media (min-width: 768px){
   .lg\:static{
     position: static;
+  }
+
+  .lg\:block{
+    display: block;
   }
 
   .lg\:hidden{
@@ -937,12 +1014,12 @@ h1{
     min-height: fit-content;
   }
 
-  .lg\:w-auto{
-    width: auto;
-  }
-
   .lg\:w-1\/2{
     width: 50%;
+  }
+
+  .lg\:w-auto{
+    width: auto;
   }
 
   .lg\:flex-row{
@@ -951,5 +1028,27 @@ h1{
 
   .lg\:bg-transparent{
     background-color: transparent;
+  }
+
+  .lg\:pt-10{
+    padding-top: 2.5rem;
+  }
+
+  .lg\:pt-5{
+    padding-top: 1.25rem;
+  }
+}
+
+@media (min-width: 1180px){
+  .xl\:bottom-12{
+    bottom: 3rem;
+  }
+
+  .xl\:top-5{
+    top: 1.25rem;
+  }
+
+  .xl\:pt-10{
+    padding-top: 2.5rem;
   }
 }
