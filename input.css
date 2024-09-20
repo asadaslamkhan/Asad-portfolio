@@ -44,3 +44,12 @@ h1 {
 .btn_outline:hover {
     @apply shadow-none
 }
+
+.service-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    }
+    .service-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      background-color: #54CD90; /* Light gray background on hover */
+    }
