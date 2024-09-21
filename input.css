@@ -26,19 +26,19 @@ h1 {
 
 /* button */
 .btn {
-    @apply border border-[#FFB327] bg-[#FFB327] rounded-md px-5 py-2 duration-300;
+    @apply border border-[#FFB327] bg-[#FFB327] shadow-yellow-600 shadow-lg rounded-md px-6 py-2 duration-300;
 }
 
 .btn span {
-    @apply font-bold text-black;
+    @apply font-medium font-Jost text-black;
 }
 
 .btn:hover {
-    @apply shadow-yellow-600 shadow-md;
+    @apply shadow-none;
 }
 
 .btn_outline {
-    @apply bg-[#327A56] border-none;
+    @apply bg-[#327A56] border-none shadow-none;
 }
 
 .btn_outline:hover {
@@ -52,4 +52,5 @@ h1 {
       transform: scale(1.05);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
       background-color: #54CD90; /* Light gray background on hover */
+      
     }
