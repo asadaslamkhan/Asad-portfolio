@@ -68,6 +68,9 @@ window.addEventListener("scroll", activeLink)
 // scroll reveal
 
 
+// nightmode
+
+
 // Emailjs
 function sendMail() {
     var params = {
