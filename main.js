@@ -64,3 +64,34 @@ const activeLink = () => {
 }
 
 window.addEventListener("scroll", activeLink)
+
+// scroll reveal
+
+
+// Emailjs
+function sendMail() {
+    var params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+    }
+    const serviceID = "service_2z09lur"
+    const templateID = "template_cob1ilm"
+
+    emailjs.send(serviceID, templateID, params)
+        .then(res => {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+            console.log(res);
+            Swal.fire({
+                title: "Good job!",
+                text: "Successfully Submitted.",
+                icon: "success"
+            });
+        })
+        .catch((error) => console.log(error));
+}
+
+
+
