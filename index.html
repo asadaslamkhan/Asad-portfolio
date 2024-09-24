@@ -29,7 +29,7 @@
   <!-- header -->
   <header id="navbar" class="bg-[#25262A] fixed w-full top-0 left-0 z-50">
     <nav class="container flex items-center justify-between h-16 sm:h-20">
-      <div class="font-Lobster sm:text-2xl text-[#64F3AA]">Asad.</div>
+      <div class="nav__top font-Lobster sm:text-2xl text-[#64F3AA]">Asad.</div>
 
       <div id="nav-menu"
         class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-[#25262A]/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
@@ -39,11 +39,11 @@
           </li>
 
           <li>
-            <a href="#Portfolio" class="nav-link">Portfolio</a>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
           </li>
 
           <li>
-            <a href="#Contact" class="nav-link">Contact</a>
+            <a href="#contact" class="nav-link">Contact</a>
           </li>
 
 
@@ -68,16 +68,16 @@
           <!-- content -->
           <div class="home__data w-full space-y-5 lg:w-1/2">
             <h1>
-              <span class="text-[#64F3AA]">Hello</span> <br> I'am <br>Asad Aslam
+               <span class="font-Lobster font-thin">Hello</span> <br> I'am <br> <span class="text-[#64F3AA]" >Asad Aslam</span>
             </h1>
 
             <p class="text-slate-200 font-Jost">
-              As a passionate front-end developer and UI/UX designer, I craft visually stunning and intuitive websites
+              I'm a passionate Front-End Web developer and UI/UX designer, I craft visually stunning and intuitive websites
               that blend creativity with clean, efficient code. With a keen eye for detail and a focus on user
               experience, I bring digital concepts to life, delivering immersive web experiences.
             </p>
 
-            <div class="flex flex-col gap-2 sm:flex-row md:gap-4 lg:pt-5 xl:pt-10">
+            <div class="about__dowload-btn flex flex-col gap-2 sm:flex-row md:gap-4 lg:pt-5 xl:pt-10">
               <button class="btn">
                 <a href="./Asadullah.pdf" target="_blank"><span>Download Cv</span></a>
               </button>
@@ -87,7 +87,7 @@
               </button>
             </div>
 
-            <div class="flex items-center gap-5 text-lg lg:pt-10">
+            <div class="top__icons flex items-center gap-5 text-lg sm:pt-5 lg:pt-8">
               <a href="https://www.facebook.com/asadaslam8575?mibextid=LQQJ4d" target="_blank"><i
                   class="ri-facebook-fill  text-slate-200 hover:text-[#FFB327] duration-300 cursor-pointer"></i></a>
               <a href="https://github.com/asadaslamkhan" target="_blank"><i
@@ -129,7 +129,7 @@
 
     <!-- my skills -->
     <section>
-      <div class="container mx-auto p-2">
+      <div class="skills__top container mx-auto p-2">
         <h2 class="text-4xl font-bold text-center mb-14 transition-transform duration-500 transform hover:scale-105">
           My <span class="text-[#64F3AA] font-Lobster">Skills</span>
         </h2>
@@ -181,18 +181,20 @@
 
     <!-- Projects -->
 
-    <section class="text-white body-font">
-      <h2 class="text-4xl font-bold text-center mb-6 transition-transform duration-500 transform hover:scale-105">
+    <section id="portfolio" class="text-white body-font">
+      <h2 class="portfolio__top text-4xl font-bold text-center mb-6 transition-transform duration-500 transform hover:scale-105">
         <span class="text-[#64F3AA] font-Lobster">Portfolio</span>
       </h2>
       <div class="container px-5 py-12 mx-auto flex flex-wrap">
-        <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+        <!-- image -->
+        <div class="about__item__1-img lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
           <img alt="feature" class="object-cover object-center h-full w-full" src="./assets/img/project 1.jpg">
         </div>
         <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
           <div class="flex flex-col mb-10 lg:items-start items-center">
 
-            <div class="flex-grow">
+            <!-- content -->
+            <div class="about__item__1-content flex-grow">
               <h2 class="text-[#64F3AA] text-sm font-normal mb-3">-- Project 1</h2>
               <h1 class="text-[#64F3AA] text-lg font-normal mb-3">Indore Plants</h1>
               <p class="leading-relaxed text-base">Indore plants is a plant selling website .To shop the all kind of
@@ -210,13 +212,14 @@
       </div>
       <!-- project2 -->
       <div class="container px-5 py-12 mx-auto flex flex-wrap lg:flex-row-reverse">
-        <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+        <!-- image -->
+        <div class="about__item__2-img lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
           <img alt="feature" class="object-cover object-center h-full w-full" src="./assets/img/tech talk.png">
         </div>
         <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
           <div class="flex flex-col mb-10 lg:items-start items-center">
-
-            <div class="flex-grow">
+            <!-- content -->
+            <div class="about__item__2-content flex-grow">
               <h2 class="text-[#64F3AA] text-sm font-normal mb-3">-- Project 2</h2>
               <h1 class="text-[#64F3AA] text-lg font-normal mb-3">TechTalk</h1>
               <p class="leading-relaxed text-base">TechTalk is an educational based website.To Unlock your potential and
@@ -233,13 +236,16 @@
       </div>
       <!-- project 3 -->
       <div class="container px-5 py-12 mx-auto flex flex-wrap">
-        <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+
+        <!-- image -->
+        <div class="about__item__3-img lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
           <img alt="feature" class="object-cover object-center h-full w-full" src="./assets/img/Untitled (1).png">
         </div>
         <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
           <div class="flex flex-col mb-10 lg:items-start items-center">
 
-            <div class="flex-grow">
+            <!-- content -->
+            <div class="about__item__3-content flex-grow">
               <h2 class="text-[#64F3AA] text-sm font-normal mb-3">-- Project 3</h2>
               <h1 class="text-[#64F3AA] text-lg font-normal mb-3">Furni</h1>
               <p class="leading-relaxed text-base">Furni is an Ecommerce website.to shop the premium collections of
@@ -257,8 +263,8 @@
     </section>
 
     <!-- contact -->
-    <section class="text-white bg-[#2D2E32] body-font relative">
-      <div class="container px-5 py-4 mx-auto">
+    <section id="contact" class="text-white bg-[#2D2E32] body-font relative">
+      <div class="contact__top container px-5 py-4 mx-auto">
         <h2 class="text-4xl font-bold text-center mb-4 transition-transform duration-500 transform hover:scale-105">
           <span class="text-[#64F3AA] font-Lobster">Contact</span>
           <p class="lg:w-2/3 mx-auto text-lg  font-medium py-6">Get In Touch With Me </p>
@@ -283,7 +289,7 @@
                   class="w-full text-white placeholder:text-white bg-[#1f2021] rounded-lg border border-[#64F4AB] h-32 text-base outline-none  py-1 px-3  duration-200 ease-in-out"></textarea>
               </div>
             </div>
-            <div class="p-2 w-full">
+            <div class="about__sendme-btn p-2 w-full">
               <button onclick="sendMail()"
                 class="flex mx-auto text-black font-Jost font-medium border border-[#FFB327] bg-[#FFB327] shadow-yellow-600 shadow-lg rounded-md px-6 py-2 duration-300 hover:shadow-none">Send
                 To Me</button>
@@ -346,7 +352,7 @@
 
   <!-- scrollup -->
   <a href="#"
-    class="fixed right-4 -bottom-1/2 bg-[#64F3AA] text-black shadow-sm inline-block px-3 py-1 md:px-4 md:py-2 rounded-md text-lg z-50 hover:translate-y-1 duration-300"
+    class="fixed right-4 -bottom-1/2 bg-[#F8C81A] text-black shadow-sm inline-block px-3 py-1 md:px-4 md:py-2 rounded-md text-lg z-50 hover:translate-y-1 duration-300"
     id="scroll-up">
     <i class="ri-arrow-up-line"></i>
   </a>

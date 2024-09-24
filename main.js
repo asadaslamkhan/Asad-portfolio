@@ -1,3 +1,4 @@
+// toggle button
 const navMenu = document.getElementById("nav-menu")
 const navLink = document.querySelectorAll(".nav-link")
 const hamburger = document.getElementById("hamburger")
@@ -66,16 +67,39 @@ const activeLink = () => {
 window.addEventListener("scroll", activeLink)
 
 // scroll reveal animation
-const sr = ScrollReveal({
-    origin: "top",
-    distance: "60px",
-    duration: 2500,
-    delay: 300,
-    reset: true 
-})
+document.addEventListener("DOMContentLoaded", function () {
+    const sr = ScrollReveal({
+        origin: "top",
+        distance: "60px",
+        duration: 2500,
+        delay: 300,
+        reset: true
+    });
 
-sr.reveal(`.home__data`)
-sr.reveal(`.home__image`)
+    sr.reveal(`.home__data, .skills__top, .portfolio__top, .contact__top, .nav__top`)
+    sr.reveal(`.home__image`, { delay: 500, scale: 0.5 });
+
+    sr.reveal(`.service-card`, { interval: 100 })
+
+    sr.reveal(`.about__item__1-content, .about__item__2-img`, { origin: "right" });
+    sr.reveal(`.about__item__2-content, .about__item__1-img`, { origin: "left" });
+    sr.reveal(`.about__item__3-content`, { origin: "left" });
+    sr.reveal(`.about__item__3-img`, { origin: "right" });
+    sr.reveal(`.about__dowload-btn`, { origin: "right" });
+    sr.reveal(`.nav__top`, { origin: "left", reset: false });
+    sr.reveal(`.top__icons`, { origin: "left" });
+    sr.reveal(`.navbar__top`, { origin: "right" });
+    sr.reveal(`.about__sendme-btn`, { origin: "top" })
+
+
+
+
+
+
+
+
+
+});
 
 
 
