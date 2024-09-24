@@ -715,6 +715,14 @@ video {
   margin-top: 1rem;
 }
 
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -877,6 +885,18 @@ video {
   gap: 2rem;
 }
 
+.space-y-7 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
 .space-y-5 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1024,6 +1044,10 @@ video {
   padding-bottom: 2rem;
 }
 
+.pt-3{
+  padding-top: 0.75rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1034,6 +1058,10 @@ video {
 
 .font-Lobster{
   font-family: Lobster, sans-serif;
+}
+
+.font-Poppins{
+  font-family: Poppins, sans-serif;
 }
 
 .text-2xl{
