@@ -65,10 +65,19 @@ const activeLink = () => {
 
 window.addEventListener("scroll", activeLink)
 
-// scroll reveal
+// scroll reveal animation
+const sr = ScrollReveal({
+    origin: "top",
+    distance: "60px",
+    duration: 2500,
+    delay: 300,
+    reset: true 
+})
+
+sr.reveal(`.home__data`)
+sr.reveal(`.home__image`)
 
 
-// nightmode
 
 
 // Emailjs

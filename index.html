@@ -5,21 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+
   <!-- favicon icon -->
-  <link rel="shortcut icon" href="./assets/logo without-bg.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/img/logo without-bg.svg" type="image/x-icon">
+
   <!-- remix-icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
   <!-- emailjs -->
-  <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-(function(){
-emailjs.init({
-  publicKey: "3-NvaxA_oygSaGLl4",
-});
-})();
-</script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "3-NvaxA_oygSaGLl4",
+      });
+    })();
+  </script>
   <title>Home-Asad</title>
 </head>
 
@@ -59,23 +61,25 @@ emailjs.init({
     <section id="home" class="relative">
       <div class="container">
         <!-- blob-1 -->
-         <div class="w-64 h-64 bg-[#3f4145] rounded-full blur-3xl -z-10 opacity-40 absolute ">
+        <div class="w-64 h-64 bg-[#3f4145] rounded-full blur-3xl -z-10 opacity-40 absolute ">
 
-         </div>
+        </div>
         <div class="flex flex-col items-center gap-5 lg:flex-row">
           <!-- content -->
-          <div class="w-full space-y-5 lg:w-1/2">
+          <div class="home__data w-full space-y-5 lg:w-1/2">
             <h1>
-              <span class="text-[#64F3AA]">Hello</span> <br> I'm <br>Asad Aslam
+              <span class="text-[#64F3AA]">Hello</span> <br> I'am <br>Asad Aslam
             </h1>
 
             <p class="text-slate-200 font-Jost">
-              As a passionate front-end developer and UI/UX designer, I craft visually stunning and intuitive websites that blend creativity with clean, efficient code. With a keen eye for detail and a focus on user experience, I bring digital concepts to life, delivering immersive web experiences.
+              As a passionate front-end developer and UI/UX designer, I craft visually stunning and intuitive websites
+              that blend creativity with clean, efficient code. With a keen eye for detail and a focus on user
+              experience, I bring digital concepts to life, delivering immersive web experiences.
             </p>
 
             <div class="flex flex-col gap-2 sm:flex-row md:gap-4 lg:pt-5 xl:pt-10">
               <button class="btn">
-                <a href="./Asadullah.pdf" target="_blank" ><span>Download Cv</span></a>
+                <a href="./Asadullah.pdf" target="_blank"><span>Download Cv</span></a>
               </button>
 
               <button class="btn btn_outline">
@@ -84,15 +88,20 @@ emailjs.init({
             </div>
 
             <div class="flex items-center gap-5 text-lg lg:pt-10">
-              <a href="https://www.facebook.com/asadaslam8575?mibextid=LQQJ4d" target="_blank"><i class="ri-facebook-fill  text-slate-200 hover:text-[#FFB327] duration-300 cursor-pointer"></i></a>
-              <a href="https://github.com/asadaslamkhan" target="_blank"><i class="ri-github-line text-slate-200 hover:text-[#FFB327] duration-300 cursor-pointer text-base"></i></a>
-              <a href="https://www.instagram.com/asadaslam8575?igsh=MTNuZXc4MHBwa2NkNw%3D%3D&utm_source=qr" target="_blank"><i class="ri-instagram-line text-slate-200 hover:text-[#FFB327] duration-300 cursor-pointer"></i></a>
-              <a href="https://www.linkedin.com/in/asad-aslam-2693022b5/" target="_blank"><i class="ri-linkedin-fill  text-slate-200 hover:text-[#FFB327] duration-300 cursor-pointer"></i></a>
+              <a href="https://www.facebook.com/asadaslam8575?mibextid=LQQJ4d" target="_blank"><i
+                  class="ri-facebook-fill  text-slate-200 hover:text-[#FFB327] duration-300 cursor-pointer"></i></a>
+              <a href="https://github.com/asadaslamkhan" target="_blank"><i
+                  class="ri-github-line text-slate-200 hover:text-[#FFB327] duration-300 cursor-pointer text-base"></i></a>
+              <a href="https://www.instagram.com/asadaslam8575?igsh=MTNuZXc4MHBwa2NkNw%3D%3D&utm_source=qr"
+                target="_blank"><i
+                  class="ri-instagram-line text-slate-200 hover:text-[#FFB327] duration-300 cursor-pointer"></i></a>
+              <a href="https://www.linkedin.com/in/asad-aslam-2693022b5/" target="_blank"><i
+                  class="ri-linkedin-fill  text-slate-200 hover:text-[#FFB327] duration-300 cursor-pointer"></i></a>
             </div>
           </div>
           <!-- image -->
           <div class="w-full relative lg:w-1/2">
-            <img src="./assets/home img 4 (2).png" alt="home_image">
+            <img src="./assets/img/home img 4 (2).png" alt="home_image" class="home__image">
 
 
             <!-- react icon -->
@@ -119,13 +128,14 @@ emailjs.init({
     </section>
 
     <!-- my skills -->
-     <section>
+    <section>
       <div class="container mx-auto p-2">
         <h2 class="text-4xl font-bold text-center mb-14 transition-transform duration-500 transform hover:scale-105">
           My <span class="text-[#64F3AA] font-Lobster">Skills</span>
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="service-card bg-[#2b2b30] border border-[#64F3AA] shadow-md shadow-[#64F3AA] rounded-lg  p-6 text-center">
+          <div
+            class="service-card bg-[#2b2b30] border border-[#64F3AA] shadow-md shadow-[#64F3AA] rounded-lg  p-6 text-center">
             <div class="text-5xl mb-4 transition-transform duration-300 transform hover:scale-110">
               🌐
             </div>
@@ -134,16 +144,18 @@ emailjs.init({
             </h3>
             <p class="text-white">Creating responsive and interactive websites.</p>
           </div>
-          <div class="service-card bg-[#2b2b30] border border-[#64F3AA] shadow-md shadow-[#64F3AA] rounded-lg  p-6 text-center">
+          <div
+            class="service-card bg-[#2b2b30] border border-[#64F3AA] shadow-md shadow-[#64F3AA] rounded-lg  p-6 text-center">
             <div class="text-5xl mb-4 transition-transform duration-300 transform hover:scale-110">
               🔍
             </div>
             <h3 class="text-2xl font-semibold mb-2 transition-colors duration-300 hover:text-blue-500">
-              Wordpress 
+              Wordpress
             </h3>
             <p class="text-white">Improving your website’s visibility on search engines.</p>
           </div>
-          <div class="service-card bg-[#2b2b30] border border-[#64F3AA] shadow-md shadow-[#64F3AA] rounded-lg  p-6 text-center">
+          <div
+            class="service-card bg-[#2b2b30] border border-[#64F3AA] shadow-md shadow-[#64F3AA] rounded-lg  p-6 text-center">
             <div class="text-5xl mb-4 transition-transform duration-300 transform hover:scale-110">
               🎨
             </div>
@@ -152,7 +164,8 @@ emailjs.init({
             </h3>
             <p class="text-white">Designing eye-catching graphics and visual content.</p>
           </div>
-          <div class="service-card bg-[#2b2b30] border border-[#64F3AA] shadow-md shadow-[#64F3AA] rounded-lg  p-6 text-center">
+          <div
+            class="service-card bg-[#2b2b30] border border-[#64F3AA] shadow-md shadow-[#64F3AA] rounded-lg  p-6 text-center">
             <div class="text-5xl mb-4 transition-transform duration-300 transform hover:scale-110">
               📈
             </div>
@@ -163,81 +176,88 @@ emailjs.init({
           </div>
         </div>
       </div>
-  
-     </section>
 
-     <!-- Projects -->
-     
-     <section class="text-white body-font">
+    </section>
+
+    <!-- Projects -->
+
+    <section class="text-white body-font">
       <h2 class="text-4xl font-bold text-center mb-6 transition-transform duration-500 transform hover:scale-105">
-         <span class="text-[#64F3AA] font-Lobster">Portfolio</span>
+        <span class="text-[#64F3AA] font-Lobster">Portfolio</span>
       </h2>
-       <div class="container px-5 py-12 mx-auto flex flex-wrap">
-         <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-           <img alt="feature" class="object-cover object-center h-full w-full" src="./assets/project 1.jpg">
-         </div>
-         <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
-           <div class="flex flex-col mb-10 lg:items-start items-center">
-             
-             <div class="flex-grow">
-               <h2 class="text-[#64F3AA] text-sm font-normal mb-3">-- Project 1</h2>
-               <h1 class="text-[#64F3AA] text-lg font-normal mb-3">Indore Plants</h1>
-               <p class="leading-relaxed text-base">Indore plants is a plant selling website .To shop  the all kind of plants and enjoy fresh plants delivered to your doorstep.</p>
-               <a href="https://indore-web.vercel.app/#" target="_blank" class="mt-3 text-[#FECD1A] inline-flex items-center">Learn More
-                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                   <path d="M5 12h14M12 5l7 7-7 7"></path>
-                 </svg>
-               </a>
-             </div>
-           </div>
-          </div>
-       </div>
-       <!-- project2 -->
-       <div class="container px-5 py-12 mx-auto flex flex-wrap lg:flex-row-reverse">
+      <div class="container px-5 py-12 mx-auto flex flex-wrap">
         <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-          <img alt="feature" class="object-cover object-center h-full w-full" src="./assets/tech talk.png">
+          <img alt="feature" class="object-cover object-center h-full w-full" src="./assets/img/project 1.jpg">
         </div>
         <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
           <div class="flex flex-col mb-10 lg:items-start items-center">
-            
+
             <div class="flex-grow">
-              <h2 class="text-[#64F3AA] text-sm font-normal mb-3">-- Project 2</h2>
-              <h1 class="text-[#64F3AA] text-lg font-normal mb-3">TechTalk</h1>
-              <p class="leading-relaxed text-base">TechTalk is an educational based website.To  Unlock your potential and achieve your academic goals with personalized education.</p>
-              <a href="https://indore-web.vercel.app/#"  class="mt-3 text-[#FECD1A] inline-flex items-center">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <h2 class="text-[#64F3AA] text-sm font-normal mb-3">-- Project 1</h2>
+              <h1 class="text-[#64F3AA] text-lg font-normal mb-3">Indore Plants</h1>
+              <p class="leading-relaxed text-base">Indore plants is a plant selling website .To shop the all kind of
+                plants and enjoy fresh plants delivered to your doorstep.</p>
+              <a href="https://indore-web.vercel.app/#" target="_blank"
+                class="mt-3 text-[#FECD1A] inline-flex items-center">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
               </a>
             </div>
           </div>
-         </div>
+        </div>
+      </div>
+      <!-- project2 -->
+      <div class="container px-5 py-12 mx-auto flex flex-wrap lg:flex-row-reverse">
+        <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+          <img alt="feature" class="object-cover object-center h-full w-full" src="./assets/img/tech talk.png">
+        </div>
+        <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+          <div class="flex flex-col mb-10 lg:items-start items-center">
+
+            <div class="flex-grow">
+              <h2 class="text-[#64F3AA] text-sm font-normal mb-3">-- Project 2</h2>
+              <h1 class="text-[#64F3AA] text-lg font-normal mb-3">TechTalk</h1>
+              <p class="leading-relaxed text-base">TechTalk is an educational based website.To Unlock your potential and
+                achieve your academic goals with personalized education.</p>
+              <a href="https://indore-web.vercel.app/#" class="mt-3 text-[#FECD1A] inline-flex items-center">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- project 3 -->
       <div class="container px-5 py-12 mx-auto flex flex-wrap">
         <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-          <img alt="feature" class="object-cover object-center h-full w-full" src="./assets/Untitled (1).png">
+          <img alt="feature" class="object-cover object-center h-full w-full" src="./assets/img/Untitled (1).png">
         </div>
         <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
           <div class="flex flex-col mb-10 lg:items-start items-center">
-            
+
             <div class="flex-grow">
               <h2 class="text-[#64F3AA] text-sm font-normal mb-3">-- Project 3</h2>
               <h1 class="text-[#64F3AA] text-lg font-normal mb-3">Furni</h1>
-              <p class="leading-relaxed text-base">Furni is an Ecommerce website.to shop the premium collections of sofa,s and enjoy luxury seating delivered to your doorstep.</p>
-              <a href="https://indore-web.vercel.app/#"  class="mt-3 text-[#FECD1A] inline-flex items-center">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <p class="leading-relaxed text-base">Furni is an Ecommerce website.to shop the premium collections of
+                sofa,s and enjoy luxury seating delivered to your doorstep.</p>
+              <a href="https://indore-web.vercel.app/#" class="mt-3 text-[#FECD1A] inline-flex items-center">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
               </a>
             </div>
           </div>
-         </div>
+        </div>
       </div>
-     </section>
+    </section>
 
-     <!-- contact -->
-     <section class="text-white bg-[#2D2E32] body-font relative">
+    <!-- contact -->
+    <section class="text-white bg-[#2D2E32] body-font relative">
       <div class="container px-5 py-4 mx-auto">
         <h2 class="text-4xl font-bold text-center mb-4 transition-transform duration-500 transform hover:scale-105">
           <span class="text-[#64F3AA] font-Lobster">Contact</span>
@@ -247,21 +267,26 @@ emailjs.init({
           <div class="flex flex-wrap -m-2">
             <div class="p-2 w-1/2">
               <div class="relative">
-                <input type="text" id="name" name="name" placeholder="Full Name" class="w-full font-Jost text-white placeholder:text-white bg-[#1f2021] rounded-lg border border-[#64F4AB] outline-none py-1 px-3 leading-8  duration-200 ease-in-out">
+                <input type="text" id="name" name="name" placeholder="Full Name"
+                  class="w-full font-Jost text-white placeholder:text-white bg-[#1f2021] rounded-lg border border-[#64F4AB] outline-none py-1 px-3 leading-8  duration-200 ease-in-out">
               </div>
             </div>
             <div class="p-2 w-1/2">
               <div class="relative">
-                <input type="email" id="email" name="email" placeholder="Email" class="w-full text-white placeholder:text-white bg-[#1f2021] rounded-lg border border-[#64F4AB] text-base outline-none py-1 px-3 leading-8  duration-200 ease-in-out">
+                <input type="email" id="email" name="email" placeholder="Email"
+                  class="w-full text-white placeholder:text-white bg-[#1f2021] rounded-lg border border-[#64F4AB] text-base outline-none py-1 px-3 leading-8  duration-200 ease-in-out">
               </div>
             </div>
             <div class="p-2 w-full">
               <div class="relative">
-                <textarea id="message" name="message" placeholder="Message*" class="w-full text-white placeholder:text-white bg-[#1f2021] rounded-lg border border-[#64F4AB] h-32 text-base outline-none  py-1 px-3  duration-200 ease-in-out"></textarea>
+                <textarea id="message" name="message" placeholder="Message*"
+                  class="w-full text-white placeholder:text-white bg-[#1f2021] rounded-lg border border-[#64F4AB] h-32 text-base outline-none  py-1 px-3  duration-200 ease-in-out"></textarea>
               </div>
             </div>
             <div class="p-2 w-full">
-              <button onclick="sendMail()" class="flex mx-auto text-black font-Jost font-medium border border-[#FFB327] bg-[#FFB327] shadow-yellow-600 shadow-lg rounded-md px-6 py-2 duration-300 hover:shadow-none">Send To Me</button>
+              <button onclick="sendMail()"
+                class="flex mx-auto text-black font-Jost font-medium border border-[#FFB327] bg-[#FFB327] shadow-yellow-600 shadow-lg rounded-md px-6 py-2 duration-300 hover:shadow-none">Send
+                To Me</button>
             </div>
           </div>
         </div>
@@ -272,32 +297,45 @@ emailjs.init({
     <footer class="text-white body-font">
       <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-          <img class="h-16 w-16" src="./assets/logo without-bg.svg" alt=""> 
+          <img class="h-16 w-16" src="./assets/img/logo without-bg.svg" alt="">
         </a>
-        <p class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 Asad —
-          <a href="https://twitter.com/knyttneve" class="text-white ml-1" rel="noopener noreferrer" target="_blank">All Rights Reserved </a>
+        <p class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 Asad
+          —
+          <a href="https://twitter.com/knyttneve" class="text-white ml-1" rel="noopener noreferrer" target="_blank">All
+            Rights Reserved </a>
         </p>
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-          <a href="https://www.facebook.com/asadaslam8575?mibextid=LQQJ4d" target="_blank" class="text-white hover:text-[#FFB327] duration-300 cursor-pointer">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <a href="https://www.facebook.com/asadaslam8575?mibextid=LQQJ4d" target="_blank"
+            class="text-white hover:text-[#FFB327] duration-300 cursor-pointer">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
               <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
             </svg>
           </a>
-          <a href="https://github.com/asadaslamkhan" target="_blank" class="ml-3 text-white hover:text-[#FFB327] duration-300 cursor-pointer">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.867 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.342-3.369-1.342-.454-1.153-1.11-1.46-1.11-1.46-.908-.62.069-.607.069-.607 1.004.07 1.532 1.03 1.532 1.03.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.252-4.555-1.11-4.555-4.942 0-1.091.39-1.983 1.03-2.682-.103-.253-.447-1.27.098-2.646 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0112 6.845a9.56 9.56 0 012.503.337c1.91-1.295 2.75-1.025 2.75-1.025.545 1.376.2 2.393.098 2.646.64.7 1.03 1.591 1.03 2.682 0 3.841-2.337 4.687-4.565 4.935.36.31.682.923.682 1.86 0 1.343-.012 2.424-.012 2.753 0 .267.18.578.688.48A10.014 10.014 0 0022 12c0-5.523-4.477-10-10-10z"></path>
+          <a href="https://github.com/asadaslamkhan" target="_blank"
+            class="ml-3 text-white hover:text-[#FFB327] duration-300 cursor-pointer">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.867 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.342-3.369-1.342-.454-1.153-1.11-1.46-1.11-1.46-.908-.62.069-.607.069-.607 1.004.07 1.532 1.03 1.532 1.03.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.252-4.555-1.11-4.555-4.942 0-1.091.39-1.983 1.03-2.682-.103-.253-.447-1.27.098-2.646 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0112 6.845a9.56 9.56 0 012.503.337c1.91-1.295 2.75-1.025 2.75-1.025.545 1.376.2 2.393.098 2.646.64.7 1.03 1.591 1.03 2.682 0 3.841-2.337 4.687-4.565 4.935.36.31.682.923.682 1.86 0 1.343-.012 2.424-.012 2.753 0 .267.18.578.688.48A10.014 10.014 0 0022 12c0-5.523-4.477-10-10-10z">
+              </path>
             </svg>
           </a>
 
-          <a href="https://www.instagram.com/asadaslam8575?igsh=MTNuZXc4MHBwa2NkNw%3D%3D&utm_source=qr" target="_blank" class="ml-3 text-white hover:text-[#FFB327] duration-300 cursor-pointer">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <a href="https://www.instagram.com/asadaslam8575?igsh=MTNuZXc4MHBwa2NkNw%3D%3D&utm_source=qr" target="_blank"
+            class="ml-3 text-white hover:text-[#FFB327] duration-300 cursor-pointer">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
               <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
             </svg>
           </a>
-          <a href="https://www.linkedin.com/in/asad-aslam-2693022b5/" target="_blank" class="ml-3 text-white text-base hover:text-[#FFB327] duration-300 cursor-pointer">
-            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <a href="https://www.linkedin.com/in/asad-aslam-2693022b5/" target="_blank"
+            class="ml-3 text-white text-base hover:text-[#FFB327] duration-300 cursor-pointer">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
               <circle cx="4" cy="4" r="2" stroke="none"></circle>
             </svg>
           </a>
@@ -306,20 +344,21 @@ emailjs.init({
     </footer>
   </main>
 
-<!-- scrollup -->
+  <!-- scrollup -->
   <a href="#"
-  class="fixed right-4 -bottom-1/2 bg-[#64F3AA] text-black shadow-sm inline-block px-3 py-1 md:px-4 md:py-2 rounded-md text-lg z-50 hover:translate-y-1 duration-300"
-  id="scroll-up">
-  <i class="ri-arrow-up-line"></i>
-</a>
+    class="fixed right-4 -bottom-1/2 bg-[#64F3AA] text-black shadow-sm inline-block px-3 py-1 md:px-4 md:py-2 rounded-md text-lg z-50 hover:translate-y-1 duration-300"
+    id="scroll-up">
+    <i class="ri-arrow-up-line"></i>
+  </a>
 
   <!-- mainjs -->
   <script src="main.js"></script>
 
   <!-- scroll reveal -->
-   <script src="./assets/js/scrollreveal.min.js"></script>
+  <script src="./assets/js/scrollreveal.min.js"></script>
+
   <!-- sweetalert -->
-   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
